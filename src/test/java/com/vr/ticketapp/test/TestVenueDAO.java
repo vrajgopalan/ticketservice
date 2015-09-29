@@ -12,12 +12,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 import com.vr.ticketapp.dao.BookingDAO;
-import com.vr.ticketapp.dao.DepartmentDAO;
-import com.vr.ticketapp.dao.EmployeeDAO;
 import com.vr.ticketapp.dao.VenueDAO;
 import com.vr.ticketapp.entity.BookingEntity;
-import com.vr.ticketapp.entity.DepartmentEntity;
-import com.vr.ticketapp.entity.EmployeeEntity;
 import com.vr.ticketapp.entity.VenueEntity;
  
 @ContextConfiguration(locations = "classpath:application-context-test.xml")

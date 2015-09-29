@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.vr.ticketapp.entity.BookingEntity;
-import com.vr.ticketapp.entity.EmployeeEntity;
  
 @Repository
 public class BookingDAOImpl implements BookingDAO {

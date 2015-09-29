@@ -32,15 +32,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.base.Optional;
 import com.vr.ticketapp.dao.BookingDAO;
-import com.vr.ticketapp.dao.DepartmentDAO;
-import com.vr.ticketapp.dao.EmployeeDAO;
 import com.vr.ticketapp.dao.SeatHoldDAO;
 import com.vr.ticketapp.dao.VenueDAO;
 import com.vr.ticketapp.dao.VenueInstanceDAO;
 import com.vr.ticketapp.dao.VenueLevelDAO;
 import com.vr.ticketapp.entity.BookingEntity;
-import com.vr.ticketapp.entity.DepartmentEntity;
-import com.vr.ticketapp.entity.EmployeeEntity;
 import com.vr.ticketapp.entity.SeatHoldEntity;
 import com.vr.ticketapp.entity.VenueEntity;
 import com.vr.ticketapp.entity.VenueInstanceEntity;
