@@ -27,4 +27,7 @@ Since Java 8 was not available I am using Guava's "Optional" implementation.
 
 The test uses HSQLDB. For running on a container, datasource will have to be configured in application-context.xml. 
 
-
+TODO:
+Move seat hold objects (which expire after certain time) to expiring map (CacheBuilder?). This is to reduce DB hits when getting num of seats etc.
+Rewrite native sql query in DAO to named/criteria query. Verify criteria query errors.
+Implement more integration tests
