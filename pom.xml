@@ -11,8 +11,8 @@
         <jdk.version>1.7</jdk.version>
         <junit.version>4.12</junit.version>
         <spring.version>4.1.7.RELEASE</spring.version>
-        <spring.data.version>1.9.0.RELEASE</spring.data.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skip.integration.tests>false</skip.integration.tests>
         <skip.unit.tests>false</skip.unit.tests>        
     </properties>
@@ -44,8 +44,10 @@
 	                <excludes>
 		                <exclude>**/ITest*.java</exclude>
 	                </excludes>
-                <argLine>-Duser.timezone=UTC</argLine>	                
-			    </configuration>
+    				<argLine>-Duser.timezone=UTC</argLine>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>			    </configuration>
 			</plugin>	
 		<!-- Used for integration tests -->
 		<plugin>
@@ -68,7 +70,11 @@
 			        </includes>	
 	                <excludes>
 		                <exclude>**/Test*.java</exclude>
-	                </excludes>		                
+	                </excludes>		 
+    				<argLine>-Duser.timezone=UTC</argLine>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>	                               
 		            </configuration>
 		        </execution>
 		    </executions>
