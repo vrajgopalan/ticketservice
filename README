@@ -1,0 +1,30 @@
+Ticket Service
+============
+
+This is a sample application for booking tickets. This is licensed under Apache License Version 2.0. Read LICENSE for further information.
+
+## Running Tests
+## The project has been built using maven (3.2.1) and Java 7
+## The project has not been tested on Java 8
+
+For running unit tests, run the following command.
+mvn -e test
+
+For running integration tests, run the following command.
+mvn -e integration-test
+
+For creating jar file, run the following command:
+mvn clean package
+
+NOTE:
+The application assumes one "instance" of venue (i.e. venue booked for an event for a certain time) when reserving tickets. The venue_instance table is used to store this instance. Based on interface provided the code works for one venue instance.
+
+The levels for venue are in ascending order of importance (e.g. level 4 = orchestra, level 1 = balcony). When level is not given the highest level is booked first. 
+
+The expiry time of a seat hold is assumed to be one day (24 hours).
+
+Since Java 8 was not available I am using Guava's "Optional" implementation.
+
+The test uses HSQLDB. For running on a container, datasource will have to be configured in application-context.xml. 
+
+
